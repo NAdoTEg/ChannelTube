@@ -4,11 +4,11 @@ permissions:
   issues: write
   contents: read
 
-#on:
-#  workflow_dispatch:
-#  
-#  issues:
-#    types: [opened]
+on:
+  workflow_dispatch:
+  
+  issues:
+    types: [opened]
 
 jobs:
   close-issue-if-not-bug:

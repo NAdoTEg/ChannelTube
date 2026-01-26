@@ -5,7 +5,7 @@ ARG RELEASE_VERSION
 ENV RELEASE_VERSION=${RELEASE_VERSION}
 
 # Install ffmpeg and su-exec
-RUN apk update && apk add --no-cache ffmpeg su-exec deno
+RUN apk update && apk add --no-cache ffmpeg su-exec deno dos2unix
 
 # Create directories and set permissions
 COPY . /channeltube
@@ -15,7 +15,7 @@ WORKDIR /channeltube
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Make the script executable
-RUN chmod +x thewicklowwolf-init.sh
+RUN dos2unix thewicklowwolf-init.sh && chmod +x thewicklowwolf-init.sh
 
 # Expose port
 EXPOSE 5000

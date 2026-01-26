@@ -20,7 +20,7 @@ ChannelTube is a tool for synchronizing and fetching content from YouTube channe
 ```yaml
 services:
   channeltube:
-    image: thewicklowwolf/channeltube:latest
+    image: nadoteg/channeltube:latest
     container_name: channeltube
     volumes:
       - /path/to/config:/channeltube/config

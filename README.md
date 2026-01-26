@@ -1,3 +1,10 @@
+# This is a fork of TheWicklowWolf's repo #
+### Please see main branch for a stable release ###
+I am unfortunately not going to maintain this, and I would not reccommend using this
+for your own sake.
+
+
+
 ![Build Status](https://github.com/TheWicklowWolf/ChannelTube/actions/workflows/main.yml/badge.svg)
 ![Docker Pulls](https://img.shields.io/docker/pulls/thewicklowwolf/channeltube.svg)
 
@@ -89,3 +96,4 @@ To utilize a cookies file with yt-dlp, follow these steps:
 
 
 https://hub.docker.com/r/thewicklowwolf/channeltube
+
